@@ -33,5 +33,5 @@ using var activity = activitySource.StartActivity();
 
 Console.WriteLine("post otel");
 
-activity.Stop();
+activity?.Stop();
 tp.ForceFlush();
